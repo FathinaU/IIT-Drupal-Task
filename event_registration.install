@@ -1,0 +1,25 @@
+<?php
+
+function event_registration_schema() {
+  $schema['event_config'] = [
+    'fields' => [
+      'id' => ['type' => 'serial', 'not null' => TRUE],
+      'event_name' => ['type' => 'varchar', 'length' => 255],
+      'category' => ['type' => 'varchar', 'length' => 100],
+      'event_date' => ['type' => 'varchar', 'length' => 20],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  $schema['event_registrations'] = [
+    'fields' => [
+      'id' => ['type' => 'serial', 'not null' => TRUE],
+      'full_name' => ['type' => 'varchar', 'length' => 255],
+      'email' => ['type' => 'varchar', 'length' => 255],
+      'event_name' => ['type' => 'varchar', 'length' => 255],
+      'created' => ['type' => 'int', 'default' => 0],
+    ],
+    'primary key' => ['id'],
+  ];
+  return $schema;
+}
