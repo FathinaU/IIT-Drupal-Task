@@ -1,0 +1,9 @@
+{
+    "name": "drupal/event_registration",
+    "description": "Custom event registration module for IIT Bombay internship.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "drupal/core": "^10"
+    }
+}

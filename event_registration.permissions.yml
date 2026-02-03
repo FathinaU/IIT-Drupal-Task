@@ -1,0 +1,4 @@
+access event registrations:
+  title: 'Access event registrations listing'
+  description: 'Allows the user to view and export the list of event participants.'
+  restrict access: true

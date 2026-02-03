@@ -1,0 +1,7 @@
+event_registration.register_form:
+  path: '/event/register'
+  defaults:
+    _form: '\Drupal\event_registration\Form\RegistrationForm'
+    _title: 'Event Registration'
+  requirements:
+    _access: 'TRUE'
